@@ -3,11 +3,12 @@ def solution(s):
 
     if len(s) == 4 or len(s) == 6:
         for i in s:
-            if i // 1 >= 1:
+            if i.isdecimal():
                 answer = True
             else:
                 answer = False
                 break
-
+    else:
+        answer = False
 
     return answer
