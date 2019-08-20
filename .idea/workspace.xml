@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f511746-8f13-4724-9e71-59145e4b8183" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PycharmProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PycharmProjects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +46,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bomber1">
-    <configuration name="정올140" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.이상한 문자 만들기">
+    <configuration name="이상한 문자 만들기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -57,12 +55,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Jungol" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programmers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Jungol/정올140.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/programmers/이상한 문자 만들기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -71,7 +69,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="정올142" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="약수의 합" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,12 +77,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Jungol" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programmers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Jungol/정올142.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/programmers/약수의 합.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -93,7 +91,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="정올143" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="시저 암호" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,12 +99,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Jungol" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programmers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Jungol/정올143.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/programmers/시저 암호.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,19 +158,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.정올140" />
-      <item itemvalue="Python.정올142" />
-      <item itemvalue="Python.정올143" />
       <item itemvalue="Python.bomber" />
       <item itemvalue="Python.bomber1" />
+      <item itemvalue="Python.시저 암호" />
+      <item itemvalue="Python.약수의 합" />
+      <item itemvalue="Python.이상한 문자 만들기" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.bomber1" />
+        <item itemvalue="Python.이상한 문자 만들기" />
+        <item itemvalue="Python.약수의 합" />
+        <item itemvalue="Python.시저 암호" />
         <item itemvalue="Python.bomber" />
-        <item itemvalue="Python.정올143" />
-        <item itemvalue="Python.정올142" />
-        <item itemvalue="Python.정올140" />
+        <item itemvalue="Python.bomber1" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +190,8 @@
       <workItem from="1565866139830" duration="22000" />
       <workItem from="1565866177372" duration="25000" />
       <workItem from="1566216247156" duration="180000" />
-      <workItem from="1566292435779" duration="5007000" />
+      <workItem from="1566292435779" duration="5253000" />
+      <workItem from="1566307548915" duration="4993000" />
     </task>
     <servers />
   </component>
@@ -224,8 +223,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PycharmProjects$140.coverage" NAME="정올140 Coverage Results" MODIFIED="1565704171638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Jungol" />
-    <SUITE FILE_PATH="coverage/PycharmProjects$bomber.coverage" NAME="bomber Coverage Results" MODIFIED="1566298285127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Jungol" />
+    <SUITE FILE_PATH="coverage/PycharmProjects$bomber.coverage" NAME="bomber Coverage Results" MODIFIED="1566307461838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Jungol" />
     <SUITE FILE_PATH="coverage/PycharmProjects$bomber1.coverage" NAME="bomber1 Coverage Results" MODIFIED="1566298354026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Jungol" />
+    <SUITE FILE_PATH="coverage/PycharmProjects$__.coverage" NAME="이상한 문자 만들기 Coverage Results" MODIFIED="1566312343599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programmers" />
+    <SUITE FILE_PATH="coverage/PycharmProjects$_.coverage" NAME="약수의 합 Coverage Results" MODIFIED="1566311790260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programmers" />
     <SUITE FILE_PATH="coverage/PycharmProjects$1204_.coverage" NAME="1204.최빈수구하기 Coverage Results" MODIFIED="1565702180542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/swexpert/D2" />
   </component>
 </project>
