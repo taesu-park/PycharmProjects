@@ -8,8 +8,13 @@ for i in range(1, T+1):
         count[int(num)] += 1
     idxnum = 0
     countmax = count[0]
-    for idx,j in enumerate(count):
-        if j >= countmax:
-            countmax = j
-            idxnum = idx
+    # for idx,j in enumerate(count):
+    #     if j >= countmax:
+    #         countmax = j
+    #         idxnum = idx
+
+    for j in range(len(count)):
+        if count[j] >= countmax:
+            countmax = count[j]
+            idxnum = j
     print(idxnum, countmax)
