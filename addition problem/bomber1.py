@@ -16,6 +16,7 @@ for t in range(1, T + 1):
                 row_sum += arr[i][k]
                 col_sum += arr[k][j]
             arr2[i][j] += row_sum + col_sum - arr[i][j]
+
     arrmax = 0
     row = col = 0
     for x in range(N):
@@ -25,6 +26,7 @@ for t in range(1, T + 1):
                 row = x
                 col = y
     print(arrmax, row, col)
+
     # row_sum = col_sum = 0R
     # ans = 0
     # row = col = 0
