@@ -11,3 +11,5 @@ def solution(s, n):
 
 
 print(solution(' b', 4))
+
+# 대문자에서 소문자영역으로 넘어갈때 범위 나눠주기

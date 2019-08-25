@@ -42,3 +42,5 @@ def solution(n):
     return True
 
 solution(10)
+
+# 에라토스테네스의 체 해보기
