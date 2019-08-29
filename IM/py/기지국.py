@@ -12,7 +12,7 @@ XXHXHXXXX
 XXXXXXXXX
 
 
-import sys; sys.stdin = open('input.txt', 'r')
+import sys; sys.stdin = open('input_a.txt', 'r')
 T = int(input())
 for tc in range(1, T + 1):
     N = int(input())

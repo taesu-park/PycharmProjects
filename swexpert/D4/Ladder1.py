@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('input.txt','r')
+sys.stdin = open('input_Ladder.txt','r')
 
 
 for t in range(1, 11):
