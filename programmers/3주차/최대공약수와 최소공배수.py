@@ -26,16 +26,16 @@
 #     return answer
 #
 # print(solution(2, 5))
-# 유클리드 호제법
-# answer = []
-# def solution(n, m):
-#     while m:
-#         n, m = m, n % m
-#     return answer.append(n)
-# print(solution(10,12))
-# print(answer)
-# def solution2(n, m):
-#     lcm = (n*m) // solution(n, m)
-#     return lcm
-#
-# print(solution(10,12), solution2(10, 12))
+
+answer = []
+def solution(n, m):
+    while m:
+        n, m = m, n % m
+    return answer.append(n)
+print(solution(10,12))
+print(answer)
+def solution2(n, m):
+    lcm = (n*m) // solution(n, m)
+    return lcm
+
+print(solution(10,12), solution2(10, 12))
