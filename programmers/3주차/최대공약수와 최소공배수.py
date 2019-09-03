@@ -31,11 +31,10 @@ answer = []
 def solution(n, m):
     while m:
         n, m = m, n % m
-    return answer.append(n)
-print(solution(10,12))
-print(answer)
+    return n, solution2(n, m)
+
 def solution2(n, m):
     lcm = (n*m) // solution(n, m)
     return lcm
 
-print(solution(10,12), solution2(10, 12))
+print(solution(12,10), solution2(12, 10))
