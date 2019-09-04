@@ -10,11 +10,13 @@ def DFS(n):
     for w in sorted(G[n]):
         if not visit[w]:
             DFS(w)
+
 def BFS(n):
     Visit = [False] * (N+1)
-    Q = deque
+    Q = deque()
     Q.append(n)
     Visit[n] = True
+    print(n, end=' ')
     while Q:
         v = Q.popleft()
         for w in sorted(G[v]):
@@ -23,10 +25,12 @@ def BFS(n):
                 Q.append(w)
                 print(w, end=' ')
 
+
 for _ in range(M):
     u, v = map(int,input().split())
     G[u].append(v)
     G[v].append(u)
 
 DFS(V)
+print()
 BFS(V)
