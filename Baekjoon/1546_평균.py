@@ -4,11 +4,8 @@ avg = 0
 maxnum = max(arr)
 narr = []
 for num in arr:
-    if num == maxnum:
-        narr.append(num)
-    else:
-        num = (num/maxnum)*100
-        narr.append(num)
+    num = (num/maxnum)*100
+    narr.append(num)
 avg = sum(narr)/N
 
 
