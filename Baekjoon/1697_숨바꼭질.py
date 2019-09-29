@@ -1,24 +1,24 @@
-import sys
-sys.setrecursionlimit(10000)
 from collections import deque
-N, K = map(int,input().split())
-Min = 0xffffffff
-visit = [False]*100000
-a = 0
 Q = deque()
-def BFS(x, y):
-    Q.append(x)
-    while Q:
-        for _ in range(len(Q)):
-            v = Q.popleft()
-            if visit[v]:
-                continue
-            if v == K:
-                return y
-            else:
-                visit[v] = True
-                Q.append(v)
-            y += 1
-
-
-print(BFS(N,0))
+N, K = map(int,input().split())
+Q.append(N)
+count = 0
+a = 0
+visit = [False]*100001
+while Q:
+    if a:
+        break
+    for i in range(len(Q)):
+        v = Q.popleft()
+        visit[v] = True
+        if v == K:
+            a = 1
+            print(count)
+            break
+        else:
+            dx = [-1, 1, v]
+            for x in range(3):
+                tx = v + dx[x]
+                if 0 <= tx <= 100000 and not visit[tx]:
+                    Q.append(tx)
+    count += 1
