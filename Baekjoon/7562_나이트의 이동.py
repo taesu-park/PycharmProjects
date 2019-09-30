@@ -29,5 +29,6 @@ for tc in range(1, T+1):
                     tx = v + dx[x]
                     ty = w + dy[x]
                     if 0 <= tx < N and 0 <= ty < N and not visit[tx][ty]:
+                        visit[tx][ty] = True
                         Q.append((tx,ty))
         count += 1
