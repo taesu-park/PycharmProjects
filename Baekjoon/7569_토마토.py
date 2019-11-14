@@ -1,6 +1,5 @@
 from collections import deque
 import pprint
-dx , dy = [0, 0, -1, 1]
 M, N, H = map(int,input().split())
 tomato = []
 for x in range(H):
