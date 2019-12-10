@@ -4,10 +4,8 @@ N, M = map(int,input().split())
 
 board = [list(map(int,input().split())) for _ in range(N)]
 ans = 0
-chk = 0
-
+chk = 1
 def bfs(x, y):
-    global ans, chk
     Q = deque()
     Q.append((x, y))
     ice = [[0] * M for _ in range(N)]
@@ -29,17 +27,22 @@ def bfs(x, y):
                 board[i][j] -= ice[i][j]
                 if board[i][j] <= 0:
                     board[i][j] = 0
-    chk = 1
-    return chk
-
-while True:
-    c = 0
+    # 한번돌고나면 chk켜지니까 두번째돌때는 위에 if문에서 ans를 반환해
+    # 근데 한번에 다녹일때 처리랑 저거처리를 못해줬
+while 0 < chk < 2:
+    chk = 0
     visit = [[0] * M for _ in range(N)]
     for i in range(N):
         for j in range(M):
-            if not board[i][j]:
-                continue
             if board[i][j] and not visit[i][j]:
-                bfs(i,j)
-
+                if chk == 2:
+                    break
+                else:
+                    chk += 1
+                    bfs(i, j)
+        if chk == 2:
+            break
     ans += 1
+    if not chk:
+        ans = 1
+print(ans - 1)
