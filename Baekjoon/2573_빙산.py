@@ -27,8 +27,6 @@ def bfs(x, y):
                 board[i][j] -= ice[i][j]
                 if board[i][j] <= 0:
                     board[i][j] = 0
-    # 한번돌고나면 chk켜지니까 두번째돌때는 위에 if문에서 ans를 반환해
-    # 근데 한번에 다녹일때 처리랑 저거처리를 못해줬
 while 0 < chk < 2:
     chk = 0
     visit = [[0] * M for _ in range(N)]
