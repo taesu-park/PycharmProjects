@@ -14,5 +14,12 @@
 #
 # back(1)
 
-B = {x for x in range(4)} - {1, 2}
-print(B)
+N, M = map(int,input().split())
+def back(x, y, k):
+    if y == M:
+        print(*x)
+        return
+    else:
+        for i in range(k+1, N+1):
+            back(x+[i], y+1, i)
+back([],0, 0)
