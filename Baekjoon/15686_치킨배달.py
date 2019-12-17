@@ -23,6 +23,7 @@ for i in range(N):
     for j in range(N):
         if board[i][j] == 2:
             chicken.append((i, j))
+
         if board[i][j] == 1:
             home.append((i,j))
 H, C = len(home), len(chicken)
@@ -33,3 +34,4 @@ for i_1 in range(C):
         dis[i_1][j_1] = abs(chicken[i_1][0]-home[j_1][0]) + abs(chicken[i_1][1]-home[j_1][1])
 back(0,0,[])
 print(ans)
+
