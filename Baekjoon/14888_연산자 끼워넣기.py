@@ -26,7 +26,7 @@ def back(k,tmp):
                 else:
                     back(k+1,tmp//A[k+1])
             arr[i] += 1
-
+r
 
 back(0,A[0])
 print(MAX)
