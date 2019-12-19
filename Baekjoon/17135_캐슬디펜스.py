@@ -7,25 +7,40 @@ print(board)
 
 def bfs(pick,D):
     global ans
-    cnt = 0
+    enemy = set()
     Q = deque()
     for i in range(3):
-        Q.append((pick[i],N))
-    q = len(Q)
-    print(Q)
-    for x in range(N):
-        for i in range(q):
-            v, w = Q[i][0], Q[i][1]-x
-            print(v, w)
-            for dx, dy in [(-1, 0), (0, -1), (0, 1)]:
-                tx, ty = v+dx, w+dy
-                if tx < 0 or tx >= N-x or ty < 0 or ty >= N-x:
-                    continue
-                if board[tx][ty] == 1 and (abs(v-tx)+abs(w-ty)) <= D:
-                    board[tx][ty] = 0
-                    cnt += 1
-            D += 1
-    ans = max(ans, cnt)
+        Q.append((N, pick[i]))
+
+    while Q:
+        for x in range(N):
+            cnt = 0
+            Q = deque()
+            for i in range(3):
+                Q.append((N, pick[i]))
+            q = len(Q)
+            for i in range(q):
+                a = 0
+                v, w = Q.popleft()
+
+                for c in range(D):
+                    if a:
+                        break
+                    for dx, dy in [(0, -1-c), (-1-c,0), (0, 1+c)]:
+                        tx, ty = v+dx, w+dy
+                        if tx < 0 or tx >= N-x or ty < 0 or ty >= N-x:
+                            continue
+                        if board[tx][ty] == 1:
+                            enemy.add((tx,ty))
+                            a = 1
+                            print(enemy)
+                            break
+                        else:
+                            Q.append((tx,ty))
+            for x,y in enemy:
+                cnt += 1
+                board[x][y] = 0
+        ans = max(ans, cnt)
 def back(k,s, pick):
     if k == 3:
         bfs(pick,D)
