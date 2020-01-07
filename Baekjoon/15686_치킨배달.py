@@ -2,7 +2,6 @@ N, M = map(int,input().split())
 board = [list(map(int,input().split())) for _ in  range(N)]
 ans = 0xfffffff
 home, chicken = [], []
-
 def back(k,s,pick):
     global ans, MIN
     if k == M:
