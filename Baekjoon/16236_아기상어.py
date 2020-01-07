@@ -22,7 +22,7 @@ def bfs(x,y,b):
     if flag:
         return ans
     else:
-        return 0
+        return 01
 
 
 N = int(input())
