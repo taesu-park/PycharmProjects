@@ -7,15 +7,18 @@ def bfs():
         if flag:
             pass
         for _ in range(Q):
-            x, y, b = q.popleft()
+            x1, y1, b = q.popleft()
+            x2, y2, b = q.popleft()
             for dx, dy in [(0,1),(0,-1),(1,0),(-1,0)]:
-                while not stop:
-                    tx, ty = x+dx, y+dy
-                    if board[tx][ty] == '#':
-                        stop = 1
-                        q.append((tx-dx,ty-dy,b))
-                    elif board[tx][ty] == 'O':
-                        flag = 1
+                tx1, ty1 = x1 + dx, y1 + dy
+                tx2, ty2 = x2 + dx, y2 + dy
+                if board[tx1][ty1] == board[tx2][ty2] == '#':
+                    continue
+                else:
+                    while not stop:
+                        tx1, ty1 = x1+dx, y1+dy
+                        tx2, ty2 = x2+dx, y2+dy
+
 from collections import deque
 N, M = map(int,input().split())
 board = list(list(input()) for _ in range(N))
@@ -27,3 +30,4 @@ for i in range(N):
         elif board[i][j] == 'B':
             q.append((i,j,2))
 bfs()
+
