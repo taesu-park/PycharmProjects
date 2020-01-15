@@ -9,8 +9,8 @@ def solve(x,y):
 
 
 board = [list(map(int,input().split())) for _ in range(10)]
-confetti = [5,5,5,5,5]
-for i in range(10):
-    for j in range(10):
-        if board[i][j] == 1:
-            solve(i,j)
+confetti = [[1], [[1,1],[1,1]],[[1,1,1],[1,1,1],[1,1,1]],[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]],[[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1],[1,1,1,1,1]]]
+for z in range(4,-1):
+    for i in range(10-z-1):
+        for j in range(10-z-1):
+            if board[i][j] == confetti[z]:
