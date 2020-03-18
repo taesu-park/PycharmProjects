@@ -85,21 +85,21 @@
 # print(cnt)
 
 # 2.
-# import collections
-# scores = [2, 3, 5]
-# N = len(scores)
-# visit = [[0]* (N * 100 + 1) for _ in range(N+1)]
-# cnt = 0
-#
-# Q = []
-# Q.append(0)
-# for k in range(len(scores)):
-#     for i in range(len(Q)):
-#         t = Q[i] + scores[k]
-#         if visit[k][t] == 0:
-#             Q.append(t)
-#             visit[k][t] = 1
-# print(len(Q))
+import collections
+scores = [2, 3, 5]
+N = len(scores)
+visit = [[0]* (N * 100 + 1) for _ in range(N+1)]
+cnt = 0
+
+Q = []
+Q.append(0)
+for k in range(len(scores)):
+    for i in range(len(Q)):
+        t = Q[i] + scores[k]
+        if visit[k][t] == 0:
+            Q.append(t)
+            visit[k][t] = 1
+print(len(Q))
 def back(x,y):
     global count
     if visit[x][y]:
